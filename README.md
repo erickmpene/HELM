@@ -22,5 +22,5 @@ helm uninstall [RELEASE_NAME]
 ### Grafana (Default password) 
 Find default password for user "admin"  
 ```sh 
-kubectl get secret prom-notylus-grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
+kubectl get secret <grafana's pod> -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
 ```
