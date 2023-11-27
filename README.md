@@ -9,3 +9,13 @@ chmod 700 get_helm.sh
 
 ```
 
+# INSTALL kube-prometheus-stack
+```sh
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+helm repo update
+helm install [RELEASE_NAME] prometheus-community/kube-prometheus-stack
+```
+### Uninstall Helm Chart
+```sh
+helm uninstall [RELEASE_NAME]
+```
