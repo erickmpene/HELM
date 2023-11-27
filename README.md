@@ -19,3 +19,8 @@ helm install [RELEASE_NAME] prometheus-community/kube-prometheus-stack
 ```sh
 helm uninstall [RELEASE_NAME]
 ```
+### Grafana (Default password) 
+Find default password for user "admin"  
+```sh 
+kubectl get secret prom-notylus-grafana -o jsonpath="{.data.admin-password}" | base64 --decode ; echo
+```
