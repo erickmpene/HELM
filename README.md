@@ -1,4 +1,4 @@
-# DEPLOY HELM
+## DEPLOY HELM
 
 #### This command will allow you to install HELM on your server
 
@@ -9,7 +9,7 @@ chmod 700 get_helm.sh
 
 ```
 
-# INSTALL kube-prometheus-stack
+### Install kube-prometheus-stack
 ```sh
 helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 helm repo update
